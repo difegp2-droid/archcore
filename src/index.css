@@ -114,6 +114,12 @@ a:hover {
     object-fit: cover;
 }
 
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
 .nav-links {
     display: flex;
     gap: 2rem;
@@ -126,6 +132,14 @@ a:hover {
 }
 
 .nav-links a:hover {
+    color: var(--text-dark);
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
     color: var(--text-dark);
 }
 
@@ -777,8 +791,20 @@ a:hover {
     
     .footer-container { flex-direction: column; gap: 2rem; }
     .footer-links { flex-direction: column; gap: 1.5rem; }
-    .nav-links { display: none; }
-    .nav-actions .btn { padding: 0.5rem 1rem; font-size: 0.85rem; }
+    
+    .mobile-menu-btn { display: flex; align-items: center; justify-content: center; z-index: 101; position: relative; }
+    .nav-wrapper { 
+        position: fixed; top: 0; left: 0; width: 100%; height: 100vh; 
+        background: var(--bg-main); 
+        flex-direction: column; justify-content: center; align-items: center; 
+        gap: 2rem; z-index: 100;
+        transform: translateY(-100%); transition: transform 0.3s ease;
+        display: flex;
+    }
+    .nav-wrapper.open { transform: translateY(0); }
+    .nav-wrapper .nav-links { display: flex; flex-direction: column; align-items: center; font-size: 1.25rem; gap: 2rem; }
+    .nav-wrapper .nav-actions { display: block; margin-top: 1rem; }
+    .nav-wrapper .nav-actions .btn { font-size: 1.1rem; padding: 1rem 2rem; width: auto; }
 
     /* Responsive Layout Fixes */
     .page-layout { flex-direction: column; gap: 2rem; padding: 4rem 1.5rem; }
