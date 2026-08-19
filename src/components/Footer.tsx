@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Footer() {
   return (
     <footer className="footer">
@@ -12,21 +14,21 @@ export default function Footer() {
         <div className="footer-links">
           <div className="link-group">
             <h4>Fundamentos</h4>
-            <a href="#">Patrones de Diseño</a>
-            <a href="#">Seguridad Web (OWASP)</a>
-            <a href="#">Testing Distribuido</a>
+            <Link to="/docs/patrones">Patrones de Diseño</Link>
+            <Link to="/docs/seguridad">Seguridad Web (OWASP)</Link>
+            <Link to="/docs/testing">Testing Distribuido</Link>
           </div>
           <div className="link-group">
             <h4>Ecosistema</h4>
-            <a href="#">Cloud Native Computing Foundation</a>
-            <a href="#">The W3C Specs</a>
-            <a href="#">Open Source Tools</a>
+            <Link to="/ecosistema/cncf">Cloud Native Computing Foundation</Link>
+            <Link to="/ecosistema/w3c">The W3C Specs</Link>
+            <Link to="/ecosistema/opensource">Open Source Tools</Link>
           </div>
           <div className="link-group">
             <h4>Comunidad</h4>
-            <a href="#">Foro de Arquitectos</a>
-            <a href="#">Discord Premium</a>
-            <a href="#">Eventos y Meetups</a>
+            <Link to="/comunidad/foro">Foro de Arquitectos</Link>
+            <Link to="/comunidad/discord">Discord Premium</Link>
+            <Link to="/comunidad/calendario">Eventos y Meetups</Link>
           </div>
         </div>
       </div>

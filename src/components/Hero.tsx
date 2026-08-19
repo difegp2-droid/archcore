@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Hero() {
   return (
     <section className="hero">
@@ -16,8 +18,8 @@ export default function Hero() {
             El futuro del desarrollo de software a escala global.
           </p>
           <div className="hero-buttons">
-            <a href="#arquitectura" className="btn btn-primary">Ver Arquitectura</a>
-            <a href="#documentacion" className="btn btn-outline">Leer Docs</a>
+            <a href="/#arquitectura" className="btn btn-primary">Ver Arquitectura</a>
+            <Link to="/docs" className="btn btn-outline">Leer Docs</Link>
           </div>
         </div>
         
