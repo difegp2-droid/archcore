@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container footer-container">
         <div className="footer-brand">
           <div className="logo">
-            <img src="/assets/logo_teal.jpg" alt="ArchCore Logo" className="logo-img" style={{ width: '30px', height: '30px' }} />
+            <img src={`${import.meta.env.BASE_URL}assets/logo_teal.jpg`} alt="ArchCore Logo" className="logo-img" style={{ width: '30px', height: '30px' }} />
             <span className="logo-text">ArchCore</span>
           </div>
           <p>Ingeniería de software avanzada y diseño de sistemas distribuidos para la próxima década de la web.</p>

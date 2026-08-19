@@ -10,7 +10,7 @@ export default function Navbar() {
     <header className="navbar">
       <div className="container navbar-container">
         <Link to="/" className="logo" onClick={closeMenu}>
-          <img src="/assets/logo_teal.jpg" alt="ArchCore Logo" className="logo-img" />
+          <img src={`${import.meta.env.BASE_URL}assets/logo_teal.jpg`} alt="ArchCore Logo" className="logo-img" />
           <span className="logo-text">ArchCore</span>
         </Link>
         

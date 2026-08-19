@@ -11,7 +11,7 @@ export default function Ecosystem() {
 
         <div className="ecosystem-container">
           <div className="eco-image-wrapper fade-in">
-            <img src="/assets/ecosystem_teal.jpg" alt="Ecosistema de Redes y Dispositivos" className="eco-image" />
+            <img src={`${import.meta.env.BASE_URL}assets/ecosystem_teal.jpg`} alt="Ecosistema de Redes y Dispositivos" className="eco-image" />
           </div>
           
           <div className="eco-list">

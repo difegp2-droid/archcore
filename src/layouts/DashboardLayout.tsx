@@ -20,7 +20,7 @@ export default function DashboardLayout() {
       {/* Mobile Header */}
       <div className="mobile-dashboard-header">
         <Link to="/" className="logo">
-          <img src="/assets/logo_teal.jpg" alt="ArchCore Logo" className="logo-img" />
+          <img src={`${import.meta.env.BASE_URL}assets/logo_teal.jpg`} alt="ArchCore Logo" className="logo-img" />
           <span className="logo-text">ArchCore</span>
         </Link>
         <button 
@@ -34,7 +34,7 @@ export default function DashboardLayout() {
       {/* Sidebar */}
       <aside className={`dashboard-sidebar ${isMobileMenuOpen ? 'open' : ''}`}>
         <Link to="/" className="logo sidebar-logo" style={{ marginBottom: '3rem' }}>
-          <img src="/assets/logo_teal.jpg" alt="ArchCore Logo" className="logo-img" />
+          <img src={`${import.meta.env.BASE_URL}assets/logo_teal.jpg`} alt="ArchCore Logo" className="logo-img" />
           <span className="logo-text">ArchCore</span>
         </Link>
         

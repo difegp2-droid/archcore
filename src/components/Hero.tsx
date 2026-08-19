@@ -25,7 +25,7 @@ export default function Hero() {
         
         <div className="hero-visual slide-up">
           <div className="hero-image-wrapper">
-            <img src="/assets/hero_teal.jpg" alt="Arquitectura Web Abstracta" className="hero-image" />
+            <img src={`${import.meta.env.BASE_URL}assets/hero_teal.jpg`} alt="Arquitectura Web Abstracta" className="hero-image" />
           </div>
         </div>
       </div>
