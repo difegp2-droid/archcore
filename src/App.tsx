@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
 import MainLayout from './layouts/MainLayout';
 import Home from './pages/Home';
@@ -22,7 +22,7 @@ import Configuracion from './pages/portal/Configuracion';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<MainLayout />}>
@@ -58,7 +58,7 @@ function App() {
           <Route path="configuracion" element={<Configuracion />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
