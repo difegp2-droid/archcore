@@ -16,7 +16,7 @@ export default function Navbar() {
         
         <div className={`nav-wrapper ${isMenuOpen ? 'open' : ''}`}>
           <nav className="nav-links">
-            <a href="/#ecosistema" onClick={closeMenu}>Ecosistema</a>
+            <Link to="/ecosistema" onClick={closeMenu}>Ecosistema</Link>
             <Link to="/docs" onClick={closeMenu}>Docs</Link>
             <Link to="/comunidad" onClick={closeMenu}>Comunidad</Link>
           </nav>
